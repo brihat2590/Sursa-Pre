@@ -1,16 +1,18 @@
 import { cn } from "@/lib/utils";
 import {
   IconAdjustmentsBolt,
-  IconBug,
+ 
   IconCloud,
   
   IconEaseInOut,
   
-  IconHelp,
+  
   IconRouteAltLeft,
   IconShieldLock,
   IconTerminal2,
+  
 } from "@tabler/icons-react";
+import { RefreshCw, Share2,  } from "lucide-react";
 
 export function DownFeatures() {
     const features = [
@@ -25,8 +27,8 @@ export function DownFeatures() {
           icon: <IconCloud />,
         },
         {
-          title: "Zero-Configuration Workspaces",
-          description: "Launch fully-configured dev environments in seconds – no setup required. Focus on code, not infrastructure.",
+          title: "One-Time Configuration Workspaces",
+          description: "Set up your dev environment once and reuse it forever – streamlined, consistent, and ready when you are.",
           icon: <IconEaseInOut />,
         },
         {
@@ -45,14 +47,14 @@ export function DownFeatures() {
           icon: <IconShieldLock />,
         },
         {
-          title: "AI Documentation Generator",
-          description: "Automatically create comprehensive documentation from your codebase with smart comment analysis.",
-          icon: <IconHelp />,
+          title: "Live Preview & Share",
+          description: "Preview web apps instantly and share live, secure links with your team or clients — no deploy required.",
+          icon: <Share2 />,
         },
         {
-          title: "Predictive Debugging",
-          description: "AI identifies potential errors before execution and suggests targeted fixes.",
-          icon: <IconBug />,
+          title: "Instant Environment Sync",
+          description: "Your workspace, dependencies, and files sync across devices in real-time – just log in and continue coding.",
+          icon: <RefreshCw />,
         }
       ];
   
