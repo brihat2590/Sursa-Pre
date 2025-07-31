@@ -110,8 +110,9 @@ export default function Wishlist() {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            Get exclusive early access to SursaKit. We'll be giving access to
-            waitlisted users on a rolling basis so join today!
+            Ready to transform your development ?<br></br>
+            Join the revolution in secure, AI-powered development. 
+
           </motion.p>
         </div>
 

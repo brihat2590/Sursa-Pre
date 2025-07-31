@@ -104,7 +104,8 @@ export const HeroParallax = ({
 
 export const Header = () => {
   return (
-    <section id="home" className="max-w-7xl relative mx-auto py-25  px-4 w-full left-0 top-0 z-20" >
+    <div id="home">
+    <section  className="max-w-7xl relative mx-auto py-25  px-4 w-full left-0 top-0 z-20" >
   {/* Glowing background effect - changed to yellow gradient */}
   <div className="absolute inset-0 bg-gradient-to-r from-yellow-700/10 via-amber-700/10 to-yellow-700/10 blur-3xl" />
 
@@ -122,14 +123,15 @@ export const Header = () => {
     >
       SursaKit
       <motion.span
-        className="block text-2xl md:text-5xl font-light bg-gradient-to-r from-[#ad9665] to-[#ad9665] bg-clip-text text-transparent mt-2 py-2"
+        className="block text-2xl md:text-3xl font-light bg-gradient-to-r from-[#ad9665] to-[#ad9665] bg-clip-text text-transparent mt-2 py-2"
         initial={{ opacity: 0, x: -20 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 1, delay: 0.5 }}
       >
-        Build smarter, deploy faster
+        Your Browser is now your development Environment.
       </motion.span>
     </motion.h1>
+    
 
     <motion.p
       className="max-w-3xl text-lg md:text-2xl mt-8 text-gray-300 leading-relaxed font-light"
@@ -137,10 +139,10 @@ export const Header = () => {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 1, delay: 0.7 }}
     >
-      Revolutionize your coding workflow with our{" "}
-      <span className="text-[#ad9665] font-medium">intelligent cloud-based editor</span>. Harness cutting-edge AI
-      assistance and cloud infrastructure to build, collaborate, and deploy seamlessly from any environment.
+     Secure, AI-powered development platform that revolutionizes how distributed teams code, collaborate, and deploy applications while maintaining <span className="text-[#ad9665] font-medium">enterprise-grade security</span> 
     </motion.p>
+
+     
 
     <motion.div
       className="flex gap-6 mt-12"
@@ -152,6 +154,7 @@ export const Header = () => {
     </motion.div>
   </motion.div>
 </section>
+</div>
     
   )
 };

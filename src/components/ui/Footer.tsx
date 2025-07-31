@@ -85,10 +85,10 @@ export default function Footer() {
               <p className="text-sm mb-4">
                 Subscribe to our upcoming newsletter for product updates and news.
               </p>
-              <form className="mt-2">
+              <form className="mt-2" onSubmit={()=>{}}>
                 <div className="flex">
                   <input
-                    type="email"
+                    type="email"  
                     placeholder="Your email"
                     disabled={true}
                     className="flex-grow bg-gray-800 border border-gray-700 rounded-l-lg py-2 px-4 text-white placeholder-gray-500 focus:outline-none focus:ring-1"
@@ -131,7 +131,9 @@ export default function Footer() {
   
           {/* Copyright section */}
           <div className="mt-12 pt-8 border-t border-gray-800 text-center">
-            <p className="text-sm">© {new Date().getFullYear()} Sursa Tech. All rights reserved.</p>
+            <p className="text-sm">© {new Date().getFullYear()} Sursakit. All rights reserved.<br></br>
+            Built by technical founders for secure development.
+            </p>
           </div>
         </div>
       </footer>

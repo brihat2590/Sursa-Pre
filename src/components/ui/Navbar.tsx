@@ -54,9 +54,9 @@ export const Navbar = () => {
     <nav
       className={`fixed w-full z-50 transition-all duration-500 ${
         isScrolled
-          ? "bg-black/90 backdrop-blur-lg py-3 border-b border-gray-800"
-          : "bg-transparent py-5"
-      }`}
+          ? "bg-black/90 backdrop-blur-lg border-b border-gray-800"
+          : "bg-transparent"
+      } py-5`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-6">
         <div className="flex justify-between items-center">
@@ -158,6 +158,7 @@ export const Navbar = () => {
           </div>
         </motion.div>
       )}
+      
     </nav>
   );
 };

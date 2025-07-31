@@ -1,5 +1,7 @@
+
 import FeaturesSectionDemo from "@/components/Features";
 import { HeroParallaxDemo } from "@/components/HerSection";
+import Partnership from "@/components/StrategicPartnership";
 import  Wishlist  from "@/components/Wishlist";
 
 export default function Home(){
@@ -10,6 +12,8 @@ export default function Home(){
         
             <HeroParallaxDemo />
             <FeaturesSectionDemo/>
+            
+            <Partnership/>
             <Wishlist/>
 
         </div>
