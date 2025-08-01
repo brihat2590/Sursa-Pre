@@ -72,7 +72,7 @@ export default function Wishlist() {
   };
 
   return (
-    <section id="wishlist" className="py-28 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-[#0d0b1e] to-[#1a1638] overflow-hidden">
+    <section id="wishlist" className="py-28 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-[#0d0b1e] to-[#1a1638] overflow-hidden shadow-3xl border-b">
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-16">
           <motion.h2

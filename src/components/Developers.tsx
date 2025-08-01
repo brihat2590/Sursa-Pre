@@ -15,7 +15,7 @@ interface FeatureCardProps {
 
 const FeatureCard = ({ icon: Icon, title, description, delay = 0 }: FeatureCardProps) => (
   <div 
-    className="group relative bg-[#1a1638]/60 backdrop-blur-lg border border-[#ad9665]/20 rounded-2xl p-6 hover:bg-[#1a1638]/80 transition-all duration-300 hover:border-[#ad9665]/40 hover:shadow-xl"
+    className="group relative bg-gray-900 backdrop-blur-lg border border-[#ad9665]/20 rounded-2xl p-6 hover:bg-[#1a1638]/80 transition-all duration-300 hover:border-[#ad9665]/40 hover:shadow-xl"
     style={{ animationDelay: `${delay}ms` }}
   >
     <div className="flex items-start space-x-5">
