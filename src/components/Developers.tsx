@@ -1,8 +1,10 @@
 'use client';
 
 import React from 'react';
-import { Users, CheckCircle, Rocket, Code, Shield, Zap, Building } from 'lucide-react';
+import { Users, CheckCircle, Rocket, Code, Shield, Zap, Building,  } from 'lucide-react';
 import type { LucideIcon } from 'lucide-react';
+import { TbBulb } from "react-icons/tb";
+import {motion} from "framer-motion";
 
 interface FeatureCardProps {
   icon: LucideIcon;
@@ -66,6 +68,19 @@ export default function DeveloperLanding() {
         <div className="w-full max-w-7xl">
           {/* Header */}
           <div className="text-center mb-20 animate-slide-in">
+          <motion.div
+            className="inline-flex items-center gap-3 px-5 py-2.5 rounded-full border bg-[#1a1638]/60 shadow-lg"
+            style={{ borderColor: "rgba(173, 150, 101, 0.3)" }}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+          >
+            <TbBulb className="w-5 h-5 text-[#ad9665]" />
+            <span className="text-sm font-semibold text-[#ad9665]">
+              Our Story
+            </span>
+          </motion.div>
             <h1 className="text-5xl md:text-7xl font-extrabold mb-5 leading-tight">
               <span className="text-white">Built for </span>
               <span className="bg-gradient-to-r from-[#ad9665] to-[#d4b970] bg-clip-text text-transparent">Developers</span><br />
@@ -81,7 +96,7 @@ export default function DeveloperLanding() {
                 title="Technical Founders"
                 description={
                   <>
-                    We're experienced technical founders who've lived through the pain of managing distributed development teams.
+                    We are experienced technical founders who have  lived through the pain of managing distributed development teams debugging late at night and configuring environments from scratch.
                   </>
                 }
                 delay={100}
@@ -91,7 +106,7 @@ export default function DeveloperLanding() {
                 title="Problem-First Approach"
                 description={
                   <>
-                    We built SursaKit because we had to. Every feature solves a real-world problem from remote collaboration.
+                    Every feature solves a real world problem developers and enterprise face daily, especially in remote and distributed collaboration.
                   </>
                 }
                 delay={200}

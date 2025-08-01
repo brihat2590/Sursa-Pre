@@ -10,9 +10,11 @@ export default function Partnership() {
         </div>
 
         {/* Title & Description */}
-        <h1 className="text-4xl md:text-5xl font-extrabold mb-5 text-transparent bg-clip-text bg-gradient-to-r from-[#ad9665] to-[#d4b970] animate-fade-in">
-          Strategic Partnership Opportunity
-        </h1>
+        <h1 className="text-5xl md:text-7xl font-extrabold mb-5 leading-tight">
+              <span className="text-white">Strategic </span>
+              <span className="bg-gradient-to-r from-[#ad9665] to-[#d4b970] bg-clip-text text-transparent">Partnership</span><br />
+              
+            </h1>
         <p className="text-lg md:text-xl text-gray-200 mb-12 max-w-3xl leading-relaxed animate-fade-in-up">
           We're seeking strategic partners to accelerate our go-to-market strategy. Join us in revolutionizing secure development for enterprise teams.
         </p>
