@@ -10,7 +10,7 @@ export const products = [
     title: "Sursakit",
     link: "https://sursakit.com",
     thumbnail:
-      "https://s3.sursatech.com/api/v1/buckets/sursakit/objects/download?preview=true&prefix=website%2FWhatsApp%20Image%202025-07-24%20at%205.23.00%20PM.jpeg&version_id=null",
+      "https://s3.sursatech.com/api/v1/buckets/sursakit/objects/download?preview=true&prefix=website%2FWhatsApp%20Image%202025-07-24%20at%205.23.00%20PM.jpeg&version_id=null",//white code
   },
   {
     title: "Sursakit",
@@ -30,6 +30,7 @@ export const products = [
     link: "https://sursakit.com",
     thumbnail:
       "https://s3.sursatech.com/api/v1/buckets/sursakit/objects/download?preview=true&prefix=website%2FWhatsApp%20Image%202025-07-24%20at%205.05.49%20PM.jpeg&version_id=null",
+      
   },
   {
     title: "Sursakit",

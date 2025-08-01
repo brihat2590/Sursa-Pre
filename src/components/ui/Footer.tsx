@@ -46,7 +46,7 @@ export default function Footer() {
                       d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
                     />
                   </svg>
-                  +1 (302) 464-6096
+                  <a href="tel:+13024646096">+1 (302) 464-6096</a>
                 </p>
               </address>
             </div>
@@ -74,7 +74,7 @@ export default function Footer() {
                       d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
                     />
                   </svg>
-                  +977-1-1234567
+                  <a href="tel:+977-(01)-4543720">+977-(01)-4543720</a>
                 </p>
               </address>
             </div>
@@ -83,13 +83,14 @@ export default function Footer() {
             <div>
               <h3 className="text-sm font-semibold text-white tracking-wider uppercase mb-4">Stay Updated</h3>
               <p className="text-sm mb-4">
-                Subscribe to our upcoming newsletter for product updates and news.
+                If you have any queries , you can mail us at the following mail id.
               </p>
-              <form className="mt-2">
+              {/* <form className="mt-2" onSubmit={()=>{}}>
                 <div className="flex">
                   <input
-                    type="email"
+                    type="email"  
                     placeholder="Your email"
+                    disabled={true}
                     className="flex-grow bg-gray-800 border border-gray-700 rounded-l-lg py-2 px-4 text-white placeholder-gray-500 focus:outline-none focus:ring-1"
                     style={{ borderColor: "#ad9665" }}
                   />
@@ -100,10 +101,10 @@ export default function Footer() {
                     Subscribe
                   </button>
                 </div>
-              </form>
+              </form> */}
               <div className="mt-6">
                 <a
-                  href="mailto:info@sursa.tech"
+                  href="mailto:info@sursatech.com"
                   className="text-sm flex items-center hover:text-opacity-80"
                   style={{ color: "#ad9665" }}
                 >
@@ -122,7 +123,7 @@ export default function Footer() {
                       d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
                     />
                   </svg>
-                  info@sursa.tech
+                  info@sursatech.com
                 </a>
               </div>
             </div>
@@ -130,7 +131,9 @@ export default function Footer() {
   
           {/* Copyright section */}
           <div className="mt-12 pt-8 border-t border-gray-800 text-center">
-            <p className="text-sm">© {new Date().getFullYear()} Sursa Tech. All rights reserved.</p>
+            <p className="text-sm">© {new Date().getFullYear()} Sursakit. All rights reserved.<br></br>
+            Built by technical founders for secure development.
+            </p>
           </div>
         </div>
       </footer>
