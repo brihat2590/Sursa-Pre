@@ -1,8 +1,13 @@
 
+import DeveloperPlatform from "@/components/Developers";
 import FeaturesSectionDemo from "@/components/Features";
+
 import { HeroParallaxDemo } from "@/components/HerSection";
 import Partnership from "@/components/StrategicPartnership";
+
+
 import  Wishlist  from "@/components/Wishlist";
+
 
 export default function Home(){
     return(
@@ -12,6 +17,10 @@ export default function Home(){
         
             <HeroParallaxDemo />
             <FeaturesSectionDemo/>
+            <DeveloperPlatform/>
+            
+            
+            
             
             <Partnership/>
             <Wishlist/>

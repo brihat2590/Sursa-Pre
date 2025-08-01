@@ -83,9 +83,9 @@ export default function Footer() {
             <div>
               <h3 className="text-sm font-semibold text-white tracking-wider uppercase mb-4">Stay Updated</h3>
               <p className="text-sm mb-4">
-                Subscribe to our upcoming newsletter for product updates and news.
+                If you have any queries , you can mail us at the following mail id.
               </p>
-              <form className="mt-2" onSubmit={()=>{}}>
+              {/* <form className="mt-2" onSubmit={()=>{}}>
                 <div className="flex">
                   <input
                     type="email"  
@@ -101,7 +101,7 @@ export default function Footer() {
                     Subscribe
                   </button>
                 </div>
-              </form>
+              </form> */}
               <div className="mt-6">
                 <a
                   href="mailto:info@sursatech.com"

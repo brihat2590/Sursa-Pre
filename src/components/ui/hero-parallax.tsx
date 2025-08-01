@@ -128,7 +128,7 @@ export const Header = () => {
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 1, delay: 0.5 }}
       >
-        Your Browser is now your development Environment.
+        Your Browser is now your development Environment
       </motion.span>
     </motion.h1>
     
@@ -139,7 +139,7 @@ export const Header = () => {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 1, delay: 0.7 }}
     >
-     Secure, AI-powered development platform that revolutionizes how distributed teams code, collaborate, and deploy applications while maintaining <span className="text-[#ad9665] font-medium">enterprise-grade security</span> 
+     Secure, AI-powered development platform that revolutionizes how distributed teams code, collaborate, and deploy applications while maintaining <span className="text-[#ad9665] font-medium">enterprise-grade security.</span> 
     </motion.p>
 
      
