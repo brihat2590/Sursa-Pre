@@ -4,24 +4,7 @@ import { DownFeatures } from "./ui/downfeatures";
 import { Sparkles } from "lucide-react";
 import { motion } from "framer-motion";
 
-const words = [
-  {
-    text: "Build",
-  },
-  {
-    text: "awesome",
-  },
-  {
-    text: "apps",
-  },
-  {
-    text: "with",
-  },
-  {
-    text: "SursaKit.",
-    className: "text-[#ad9665] dark:text-[#ad9665]",
-  },
-];
+
 
 export default function FeaturesSectionDemo() {
   return (
