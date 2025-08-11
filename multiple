@@ -1,0 +1,122 @@
+import React from 'react';
+import { Button } from './button';
+
+const Header = () => {
+  const navItems = [
+    { name: "Features", href: "#features-section" },
+    { name: "Wishlist", href: "#wishlist-section" },
+  ];
+
+  return (
+    <header className="bg-primary text-primary-foreground">
+      <div className="container mx-auto px-4 py-6 flex justify-between items-center">
+        <h1 className="text-3xl font-bold">SursaKit</h1>
+        <nav className="hidden md:flex space-x-4">
+          {navItems.map((item, index) => (
+            <a key={index} href={item.href} className="text-lg font-medium hover:text-secondary">
+              {item.name}
+            </a>
+          ))}
+        </nav>
+        <Button className="bg-secondary text-secondary-foreground hover:bg-secondary/90 px-6 py-2 rounded-full font-medium shadow-sm">
+          Open Editor
+        </Button>
+        <Button className="bg-secondary text-secondary-foreground hover:bg-secondary/90 px-6 py-2 rounded-full font-medium shadow-sm md:hidden">
+          Open Editor
+        </Button>
+      </div>
+    </header>
+  );
+};
+
+export default Header;
+
+// components/hero-section.tsx
+import React from 'react';
+import { Button } from './button';
+
+const HeroSection = () => {
+  return (
+    <section className="bg-secondary text-secondary-foreground py-16">
+      <div className="container mx-auto px-4 text-center">
+        <h1 className="text-5xl font-bold mb-4">SursaKit — AI‑powered Cloud Editor</h1>
+        <p className="text-lg mb-8">Code, preview, and ship from your browser. SursaKit combines an AI pair‑programmer, live previews, and integrations in a collaborative cloud workspace.</p>
+        <Button className="bg-primary text-primary-foreground hover:bg-primary/90 px-8 py-4 rounded-full font-medium shadow-lg">
+          <a href="#wishlist-section" className="text-inherit">Join the wishlist</a>
+        </Button>
+      </div>
+    </section>
+  );
+};
+
+export default HeroSection;
+
+// components/cta-section.tsx
+import React from 'react';
+import { Button } from './button';
+
+const CtaSection = () => {
+  return (
+    <section className="bg-primary text-primary-foreground py-16">
+      <div className="container mx-auto px-4 text-center">
+        <h2 className="text-4xl font-bold mb-4">Build, preview, and ship from your browser</h2>
+        <p className="text-lg mb-8">SursaKit is a web‑based AI cloud editor. Write code with an AI pair‑programmer, test with real‑time previews, and integrate your favorite tools seamlessly.</p>
+        <Button className="bg-secondary text-secondary-foreground hover:bg-secondary/90 px-8 py-4 rounded-full font-medium shadow-lg">
+          <a href="#wishlist-section" className="text-inherit">Join wishlist</a>
+        </Button>
+      </div>
+    </section>
+  );
+};
+
+export default CtaSection;
+
+// components/footer-section.tsx
+import React from 'react';
+
+const FooterSection = () => {
+  return (
+    <footer className="bg-secondary text-secondary-foreground py-8">
+      <div className="container mx-auto px-4 text-center">
+        <h2 className="text-2xl font-bold mb-4">SursaKit</h2>
+        <p className="text-lg mb-4">AI cloud editor for the web</p>
+        <p className="text-sm">© 2023 SursaKit. All rights reserved.</p>
+      </div>
+    </footer>
+  );
+};
+
+export default FooterSection;
+
+// components/dashboard-preview.tsx
+import React from 'react';
+import Image from 'next/image';
+
+const DashboardPreview = () => {
+  return (
+    <div className="bg-primary text-primary-foreground py-16">
+      <div className="container mx-auto px-4 text-center">
+        <Image src="/dashboard-preview.png" alt="SursaKit editor preview" width={800} height={400} className="mb-8" />
+        <p className="text-lg">Experience the power of SursaKit in action.</p>
+      </div>
+    </div>
+  );
+};
+
+export default DashboardPreview;
+
+// components/bento-section.tsx
+import React from 'react';
+
+const BentoSection = () => {
+  return (
+    <section className="bg-secondary text-secondary-foreground py-16">
+      <div className="container mx-auto px-4 text-center">
+        <h2 className="text-3xl font-bold mb-4">Supercharge your editing workflow with SursaKit</h2>
+        <p className="text-lg mb-8">AI assistance, live previews, powerful integrations, and collaborative tooling—everything you need to build fast in the browser.</p>
+      </div>
+    </section>
+  );
+};
+
+export default BentoSection;
