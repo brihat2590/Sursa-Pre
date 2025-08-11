@@ -27,7 +27,7 @@ const AiCodeReviews: React.FC = () => {
       aria-label="AI Code Reviews interface showing code suggestions with apply buttons"
     >
       {/* Background Message Box (Blurred) */}
-      <div
+      {/* <div
         style={{
           position: "absolute",
           top: "30px",
@@ -92,7 +92,7 @@ const AiCodeReviews: React.FC = () => {
             <p style={{ margin: 0, whiteSpace: "pre-wrap", fontWeight: 400 }}> &lt;/svg&gt;</p>
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* Foreground Message Box (Main) */}
       <div
@@ -145,45 +145,77 @@ const AiCodeReviews: React.FC = () => {
             }}
           />
           <div
-            style={{
-              fontFamily: "'Geist Mono', 'SF Mono', Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace",
-              fontSize: "10.279px",
-              lineHeight: "15.814px",
-              letterSpacing: "-0.3163px",
-              color: "var(--ai-text-color)",
-              width: "100%",
-              maxWidth: "320px",
-              position: "relative",
-              zIndex: 2,
-              margin: 0,
-            }}
-          >
-            <p style={{ margin: 0, whiteSpace: "pre-wrap", fontWeight: 400 }}>switch (type) {"{"}</p>
-            <p style={{ margin: 0, whiteSpace: "pre-wrap", fontWeight: 400 }}> case 'success':</p>
-            <p style={{ margin: 0, whiteSpace: "pre-wrap", fontWeight: 400 }}> return {"{"}</p>
-            <p style={{ margin: 0, whiteSpace: "pre-wrap", fontWeight: 400 }}>
-              {"          border: theme === 'dark' ? 'border-[rgba(34,197,94,0.4)]' : 'border-green-200',"}
-            </p>
-            <p style={{ margin: 0, whiteSpace: "pre-wrap", fontWeight: 400 }}> icon: (</p>
-            <p style={{ margin: 0, whiteSpace: "pre-wrap", fontWeight: 400 }}>
-              {'            <svg className={\'baseIconClasses\'} fill="none" viewBox="0 0 14 14">'}
-            </p>
-            <p style={{ margin: 0, whiteSpace: "pre-wrap", fontWeight: 400 }}> &lt;path</p>
-            <p style={{ margin: 0, whiteSpace: "pre-wrap", fontWeight: 400 }}>
-              {'                d="M3.85156 7.875L6.47656 10.5L10.8516 3.5"'}
-            </p>
-            <p style={{ margin: 0, whiteSpace: "pre-wrap", fontWeight: 400 }}>{'                stroke="#22C55E"'}</p>
-            <p style={{ margin: 0, whiteSpace: "pre-wrap", fontWeight: 400 }}>
-              {'                strokeLinecap="round"'}
-            </p>
-            <p style={{ margin: 0, whiteSpace: "pre-wrap", fontWeight: 400 }}>
-              {'                strokeLinejoin="round"'}
-            </p>
-            <p style={{ margin: 0, whiteSpace: "pre-wrap", fontWeight: 400 }}>{'                strokeWidth="1.5"'}</p>
-            <p style={{ margin: 0, whiteSpace: "pre-wrap", fontWeight: 400 }}> /&gt;</p>
-            <p style={{ margin: 0, whiteSpace: "pre-wrap", fontWeight: 400 }}> &lt;/svg&gt;</p>
-          </div>
-          <button
+  style={{
+    fontFamily:
+      "'Geist Mono', 'SF Mono', Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace",
+    fontSize: "10.279px",
+    lineHeight: "15.814px",
+    letterSpacing: "-0.3163px",
+    color: "var(--ai-text-color)",
+    width: "100%",
+    maxWidth: "320px",
+    position: "relative",
+    zIndex: 2,
+    margin: 0,
+  }}
+>
+  <p style={{ margin: 0, whiteSpace: "pre-wrap", fontWeight: 400 }}>
+    {"interface User {"}
+  </p>
+  <p style={{ margin: 0, whiteSpace: "pre-wrap", fontWeight: 400 }}>
+    {"  id: number;"}
+  </p>
+  <p style={{ margin: 0, whiteSpace: "pre-wrap", fontWeight: 400 }}>
+    {"  name: string;"}
+  </p>
+  <p style={{ margin: 0, whiteSpace: "pre-wrap", fontWeight: 400 }}>
+    {"  status: 'active' | 'inactive' | 'pending';"}
+  </p>
+  <p style={{ margin: 0, whiteSpace: "pre-wrap", fontWeight: 400 }}>
+    {"}"}
+  </p>
+  <p style={{ margin: 0, whiteSpace: "pre-wrap", fontWeight: 400 }}> </p>
+  <p style={{ margin: 0, whiteSpace: "pre-wrap", fontWeight: 400 }}>
+    {"function filterAndSortUsers(users: User[], status: User['status']): User[] {"}
+  </p>
+  <p style={{ margin: 0, whiteSpace: "pre-wrap", fontWeight: 400 }}>
+    {"  return users"}
+  </p>
+  <p style={{ margin: 0, whiteSpace: "pre-wrap", fontWeight: 400 }}>
+    {"    .filter(user => user.status === status)"}
+  </p>
+  <p style={{ margin: 0, whiteSpace: "pre-wrap", fontWeight: 400 }}>
+    {"    .sort((a, b) => a.name.localeCompare(b.name));"}
+  </p>
+  <p style={{ margin: 0, whiteSpace: "pre-wrap", fontWeight: 400 }}>
+    {"}"}
+  </p>
+  <p style={{ margin: 0, whiteSpace: "pre-wrap", fontWeight: 400 }}> </p>
+  <p style={{ margin: 0, whiteSpace: "pre-wrap", fontWeight: 400 }}>
+    {"// Example usage:"}
+  </p>
+  <p style={{ margin: 0, whiteSpace: "pre-wrap", fontWeight: 400 }}>
+    {"const users: User[] = ["}
+  </p>
+  <p style={{ margin: 0, whiteSpace: "pre-wrap", fontWeight: 400 }}>
+    {"  { id: 1, name: 'Alice', status: 'active' },"}
+  </p>
+  <p style={{ margin: 0, whiteSpace: "pre-wrap", fontWeight: 400 }}>
+    {"  { id: 2, name: 'Bob', status: 'pending' },"}
+  </p>
+  <p style={{ margin: 0, whiteSpace: "pre-wrap", fontWeight: 400 }}>
+    {"  { id: 3, name: 'Charlie', status: 'active' },"}
+  </p>
+  <p style={{ margin: 0, whiteSpace: "pre-wrap", fontWeight: 400 }}>
+    {"];"}
+  </p>
+  <p style={{ margin: 0, whiteSpace: "pre-wrap", fontWeight: 400 }}> </p>
+  <p style={{ margin: 0, whiteSpace: "pre-wrap", fontWeight: 400 }}>
+    {"const activeUsers = filterAndSortUsers(users, 'active');"}
+  </p>
+</div>
+
+          {/* <button
             style={{
               position: "absolute",
               top: "calc(50% + 29.745px)",
@@ -226,7 +258,7 @@ const AiCodeReviews: React.FC = () => {
             >
               ⌘Y
             </span>
-          </button>
+          </button> */}
         </div>
       </div>
     </div>

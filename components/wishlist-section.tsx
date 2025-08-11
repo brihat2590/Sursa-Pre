@@ -59,7 +59,7 @@ export function WishlistSection() {
       <div className="w-full max-w-[720px]">
         <Card className="bg-gradient-to-b from-gray-50/5 to-transparent border-border">
           <CardHeader className="space-y-2">
-            <CardTitle className="text-3xl font-semibold">
+            <CardTitle className="text-foreground text-4xl md:text-6xl font-semibold leading-tight md:leading-[66px] text-center mb-5">
               Join the SursaKit wishlist
             </CardTitle>
             <p className="text-muted-foreground">

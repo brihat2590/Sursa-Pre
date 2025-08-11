@@ -45,7 +45,7 @@ export function Header() {
         </div>
         <div className="flex items-center gap-4">
           <a href="#wishlist-section"  className="hidden md:block">
-            <Button className="bg-secondary text-secondary-foreground hover:bg-secondary/90 px-6 py-2 rounded-full font-medium shadow-sm">
+            <Button className="bg-secondary text-gray-900 hover:bg-secondary/90 px-6 py-2 rounded-full font-medium shadow-sm">
               Join the revolution
             </Button>
           </a>

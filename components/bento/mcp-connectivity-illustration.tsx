@@ -6,14 +6,12 @@ interface MultiLanguageSupportProps {
 }
 
 const languages = [
-  { name: "JavaScript / TypeScript", key: "ts", status: "Enabled" as const },
-  { name: "Python", key: "py", status: "Enabled" as const },
-  { name: "Go", key: "go", status: "Enabled" as const },
-  { name: "Rust", key: "rs", status: "Beta" as const },
-  { name: "Java", key: "java", status: "Beta" as const },
-  { name: "C# / .NET", key: "cs", status: "Preview" as const },
-  { name: "PHP", key: "php", status: "Preview" as const },
-  { name: "Ruby", key: "rb", status: "Preview" as const },
+  { name: "JavaScript / TypeScript", key: "ts",  },
+  { name: "Python", key: "py",  },
+  { name: "Go", key: "go",  },
+  { name: "Rust", key: "rs",  },
+  { name: "Java", key: "java",  },
+  
 ]
 
 function StatusBadge({ status }: { status: "Enabled" | "Beta" | "Preview" }) {
@@ -74,7 +72,7 @@ export default function MultiLanguageSupport({ className = "" }: MultiLanguageSu
           overflow: "hidden",
         }}
       >
-        {/* Header with search */}
+        {/* Header with search
         <div
           style={{
             display: "flex",
@@ -99,7 +97,7 @@ export default function MultiLanguageSupport({ className = "" }: MultiLanguageSu
           >
             Search languages
           </span>
-        </div>
+        </div> */}
 
         {/* List */}
         <div
@@ -108,22 +106,26 @@ export default function MultiLanguageSupport({ className = "" }: MultiLanguageSu
             flexDirection: "column",
             height: "calc(100% - 42px)",
             overflow: "hidden",
+            
           }}
+
+          className="flex flex-col justify-center "
         >
           {languages.map((lang, i) => (
             <div
               key={lang.key}
               style={{
                 display: "flex",
-                alignItems: "center",
-                justifyContent: "space-between",
+                alignItems: "start",
+                justifyContent: "between",
+                
                 padding: "9px 12.8px",
                 borderBottom: i < languages.length - 1 ? "0.5px solid hsl(var(--border))" : "none",
                 width: "100%",
                 boxSizing: "border-box",
               }}
             >
-              <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
+              <div style={{ display: "flex",justifyContent: "center", alignItems: "center", gap: "10px" }}>
                 {/* Small rounded tile with initials */}
                 <div
                   style={{
@@ -157,7 +159,7 @@ export default function MultiLanguageSupport({ className = "" }: MultiLanguageSu
                 </span>
               </div>
 
-              <StatusBadge status={lang.status} />
+              
             </div>
           ))}
         </div>

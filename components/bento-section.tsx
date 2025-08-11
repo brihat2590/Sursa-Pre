@@ -1,11 +1,12 @@
 import AiCodeReviews from "./bento/ai-code-reviews"
-import RealtimeCodingPreviews from "./bento/real-time-previews"
+
 import OneClickIntegrationsIllustration from "./bento/one-click-integrations-illustration"
 
 import EasyDeployment from "./bento/easy-deployment"
 
 import MultiLanguageSupport from "./bento/mcp-connectivity-illustration"
 import SecureEnvironments from "./bento/secure-environments"
+import OneTimeConfigWorkspaces from "./bento/one-time-config"
 
 type bentoType={
   title:string,
@@ -51,7 +52,7 @@ export function BentoSection() {
     {
       title: "One-time configuration workspaces",
       description: "Standardize environments once, then spin up consistent workspaces in seconds",
-      Component: RealtimeCodingPreviews,
+      Component: OneTimeConfigWorkspaces,
     },
     {
       title: "Instant Environment Sync",

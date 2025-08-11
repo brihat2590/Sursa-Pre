@@ -25,26 +25,20 @@ const DeploymentEasy: React.FC<DeploymentEasyProps> = ({ width = "100%", height 
    * Console log output (static for demo) – can be replaced via props
    * ---------------------------------------------------------- */
   const logLines = [
-    "[16:37:25.637] Running build in Washington, D.C., USA (East) – iad1",
-    "[16:37:25.638] Build machine configuration: 2 cores, 8 GB",
-    "[16:37:25.653] Retrieving list of deployment files...",
-    "[16:37:25.741] Previous build caches not available",
-    "[16:37:25.979] Downloading 84 deployment files...",
-    '[16:37:29.945] Running "vercel build"',
-    "[16:37:30.561] Vercel CLI 44.5.0",
-    '[16:37:30.880] Running "install" command: `bun install`...',
-    "[16:37:30.914] bun install v1.2.19 (aad3abea)",
-    "[16:37:30.940] Resolving dependencies",
-    "[16:37:34.436] Resolved, downloaded and extracted [1116]",
-    '[16:37:34.436] warn: incorrect peer dependency "react@19.1.0"',
-    "[16:37:37.265] Saved lockfile",
-    "[16:37:39.076] Next.js anonymous telemetry notice",
-    "[16:37:39.137] ▲ Next.js 15.2.4",
-    "[16:37:41.439] ✓ Compiled successfully",
-    "[16:37:53.979] ✓ Generated static pages",
-    "[16:38:00.585] ○ (Static) prerendered as static content",
-    "[16:38:01.099] Build Completed in /vercel/output [30s]",
-    "🚀 Deployment complete – Easy!",
+    "LOG:  starting PostgreSQL 16.3 (Debian 16.3-1.pgdg120+1) on x86_64-pc-linux-gnu, compiled by gcc (Debian 12.2.0-14) 12.2.0, 64-bit",
+  "LOG:  listening on IPv4 address \"0.0.0.0\", port 5432",
+  "LOG:  listening on IPv6 address \"::\", port 5432",
+  "LOG:  listening on Unix socket \"/var/run/postgresql/.s.PGSQL.5432\"",
+  "LOG:  database system was interrupted; last known up at 2025-08-11 01:43:44 UTC",
+  "LOG:  database system was not properly shut down; automatic recovery in progress",
+  "LOG:  invalid record length at 0/1912338: expected at least 24, got 0",
+  "LOG:  redo is not required",
+  "LOG:  checkpoint starting: end-of-recovery immediate wait",
+  "LOG:  checkpoint complete: wrote 3 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.003 s; sync files=2, longest=0.001 s, average=0.001 s; distance=0 kB, estimate=0 kB; lsn=0/1912338, redo lsn=0/1912338",
+  "LOG:  database system is ready to accept connections",
+
+    
+    
   ]
 
   return (
@@ -95,7 +89,7 @@ const DeploymentEasy: React.FC<DeploymentEasyProps> = ({ width = "100%", height 
             height: "100%",
             overflow: "hidden",
             fontFamily: "'Geist Mono', 'SF Mono', Monaco, Consolas, 'Liberation Mono', monospace",
-            fontSize: "10px",
+            fontSize: "12px",
             lineHeight: "16px",
             color: "var(--deploy-text-color)",
             whiteSpace: "pre",
