@@ -1,3 +1,5 @@
+import { Phone } from "lucide-react";
+
 export default function FooterSection() {
   return (
     <footer className=" text-gray-300 py-12 px-6 cursor-pointer">
@@ -21,9 +23,7 @@ export default function FooterSection() {
             <p>777 Ashington Dr</p>
             <p>Middletown, DE 19709</p>
             <a href="tel:+1 (302) 464-6096" className="flex items-center gap-2">
-              <svg xmlns="http://www.w3.org/2000/svg" className="inline-block h-4 w-4 text-yellow-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5h2l3 7-4 4v2h5l4-4 3 3 4-4 2 2" />
-              </svg>
+              <Phone className="inline-block h-4 w-4 text-yellow-400" />
               +1 (302) 464-6096
             </a>
           </address>
@@ -37,9 +37,7 @@ export default function FooterSection() {
             <p>Baluwatar, Kathmandu – 04</p>
             <p>Bagmati, Nepal, 44600</p>
             <a href="tel:+977 (01) 4543720" className="flex items-center gap-2">
-              <svg xmlns="http://www.w3.org/2000/svg" className="inline-block h-4 w-4 text-yellow-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5h2l3 7-4 4v2h5l4-4 3 3 4-4 2 2" />
-              </svg>
+              <Phone className="inline-block h-4 w-4 text-yellow-400" />
               +977-(01)-4543720
             </a>
           </address>
@@ -67,7 +65,7 @@ export default function FooterSection() {
 
       <div className="text-center text-gray-500 text-sm">
         © 2025 Sursakit. All rights reserved.<br />
-        Built by technical founders for secure development.
+      
       </div>
     </footer>
   );
