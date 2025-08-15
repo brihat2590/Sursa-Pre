@@ -7,6 +7,7 @@ import EasyDeployment from "./bento/easy-deployment"
 import MultiLanguageSupport from "./bento/mcp-connectivity-illustration"
 import SecureEnvironments from "./bento/secure-environments"
 import OneTimeConfigWorkspaces from "./bento/one-time-config"
+import Analytics from "./ui/analytics"
 
 type bentoType={
   title:string,
@@ -30,9 +31,9 @@ const BentoCard:React.FC<bentoType> = ({ title, description, Component }) => (
 
     <div className="self-stretch p-6 flex flex-col justify-start items-start gap-2 relative z-10">
       <div className="self-stretch flex flex-col justify-start items-start gap-1.5">
-        <p className="self-stretch text-foreground text-lg font-normal leading-7">
+        <p className="self-stretch text-foreground text-xl font-normal leading-7 p-2">
           {title} <br />
-          <span className="text-muted-foreground">{description}</span>
+          <span className="text-muted-foreground text-lg">{description}</span>
         </p>
       </div>
     </div>
@@ -60,9 +61,9 @@ export function BentoSection() {
       Component: OneClickIntegrationsIllustration,
     },
     {
-      title: "Multi-Language Support",
-      description: "Write,run and debug code in multiple programming languages without switching environments.",
-      Component: MultiLanguageSupport, // Updated component
+      title: "Analytics",
+      description: "Track time spent, monitor team activity, and measure productivity effortlessly",
+      Component: Analytics, // Updated component
     },
     {
       title: "Secure Cloud Workspaces", // Swapped position
