@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 import { Toaster } from "sonner";
 
@@ -31,6 +32,11 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <Script
+          src="https://analytics.apps.sursatech.com/script.js"
+          strategy="afterInteractive"
+          data-website-id="9982447e-3490-4dd1-96b5-3490c34d354e"
+        />
         <Toaster/>
         {children}
       </body>
