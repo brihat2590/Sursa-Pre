@@ -15,8 +15,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "SursaKit",
-  description: "SursaKit is the new AI powered cloud based IDE",
+  title: "SursaKit – The Future of Dev Infrastructure",
+  description: "AI-powered, cloud-based IDE that lets you code, collaborate, and build from anywhere",
   keywords: ["AI", "IDE", "Cloud", "Development", "Code Editor", "SursaKit"],
   authors: [{ name: "SursaTech" }],
   creator: "SursaTech",
@@ -27,8 +27,8 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://sursakit.com",
     siteName: "SursaKit",
-    title: "SursaKit - AI Powered Cloud IDE",
-    description: "SursaKit is the new AI powered cloud based IDE",
+    title: "SursaKit – The Future of Dev Infrastructure ",
+    description: "AI-powered, cloud-based IDE that lets you code, collaborate, and build from anywhere",
     images: [
       {
         url: "/logo-512.svg",
@@ -41,10 +41,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "SursaKit - AI Powered Cloud IDE",
-    description: "SursaKit is the new AI powered cloud based IDE",
+    title: "SursaKit – The Future of Dev Infrastructure",
+    description: "AI-powered, cloud-based IDE that lets you code, collaborate, and build from anywhere",
     images: ["/logo-512.svg"],
-    creator: "@SursaTech",
   },
   icons: {
     icon: [
