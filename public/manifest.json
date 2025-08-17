@@ -1,0 +1,27 @@
+{
+  "name": "SursaKit - AI Powered Cloud IDE",
+  "short_name": "SursaKit",
+  "description": "SursaKit is the new AI powered cloud based IDE",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#FFE230",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/logo.svg",
+      "sizes": "32x32",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/logo-512.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["productivity", "developer tools", "Dev environment", "AI Development", "Cloud IDE", "Vibe Coding"],
+  "lang": "en-US",
+  "dir": "ltr"
+}
