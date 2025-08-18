@@ -128,7 +128,7 @@ export function WishlistSection() {
                 <Button
                   onClick={handleSubmit}
                   disabled={loading}
-                  className="w-full md:w-auto rounded-full px-6 cursor-pointer"
+                  className="w-full md:w-auto px-[30px] py-2 bg-primary text-secondary-foreground text-base font-medium leading-6 rounded-[99px] shadow-[0px_0px_0px_4px_rgba(255,255,255,0.13)] hover:bg-secondary/90 transition-all duration-200 cursor-pointer"
                 >
                   {loading ? "Submitting..." : "Join waitlist"}
                 </Button>
