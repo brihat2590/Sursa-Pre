@@ -42,7 +42,7 @@ export function WishlistSection() {
 
       if (!res.ok) throw new Error(`Request failed: ${res.status}`)
 
-      toast.success("Your wishlist request has been submitted 🎉")
+      toast.success("Your waitlist request has been submitted 🎉")
       setFormData({ Name: "", Email: "", Role: "", TeamSize: "" })
     } catch (err: any) {
       toast.error(`Failed to submit: ${err.message}`)
@@ -53,69 +53,72 @@ export function WishlistSection() {
 
   return (
     <section
-      id="wishlist-section"
+      id="waitlist-section"
       className="w-full px-5 py-12 md:py-20 flex justify-center"
     >
       <div className="w-full max-w-[720px]">
         <Card className="bg-gradient-to-b from-gray-50/5 to-transparent border-border">
           <CardHeader className="space-y-2">
             <CardTitle className="text-foreground text-4xl md:text-6xl font-semibold leading-tight md:leading-[66px] text-center mb-5">
-              Join the SursaKit wishlist
+              Join the SursaKit waitlist
             </CardTitle>
             <p className="text-muted-foreground">
-              Be the first to access our AI-powered cloud editor. Tell us about
-              you and your team.
+              Join the waitlist to get early access to our AI-powered cloud editor.
             </p>
           </CardHeader>
           <CardContent>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
               <div className="col-span-1">
-                <Label htmlFor="Name">Name</Label>
+                <Label htmlFor="Name" className="mb-2">Name</Label>
                 <Input
                   id="Name"
                   name="Name"
-                  placeholder="Alex Johnson"
+                  placeholder="Labanya Gurung"
                   required
+                  className="mt-2"
                   value={formData.Name}
                   onChange={handleChange}
                 />
               </div>
 
               <div className="col-span-1">
-                <Label htmlFor="Email">Email</Label>
+                <Label htmlFor="Email" className="mb-2">Email</Label>
                 <Input
                   id="Email"
                   name="Email"
                   type="email"
-                  placeholder="alex@example.com"
+                  placeholder="labanya@domain.com"
                   required
+                  className="mt-2"
                   value={formData.Email}
                   onChange={handleChange}
                 />
               </div>
 
               <div className="col-span-1">
-                <Label htmlFor="Role">Role</Label>
+                <Label htmlFor="Role" className="mb-2">Role</Label>
                 <Input
                   id="Role"
                   name="Role"
-                  placeholder="Frontend Engineer"
+                  placeholder="Chief Executive Officer"
                   required
+                  className="mt-2"
                   value={formData.Role}
                   onChange={handleChange}
                 />
               </div>
 
               <div className="col-span-1">
-                <Label htmlFor="TeamSize">Number of team members</Label>
+                <Label htmlFor="TeamSize" className="mb-2">Number of team members</Label>
                 <Input
                   id="TeamSize"
                   name="TeamSize"
                   type="number"
                   min={1}
                   inputMode="numeric"
-                  placeholder="5"
+                  placeholder="10"
                   required
+                  className="mt-2"
                   value={formData.TeamSize}
                   onChange={handleChange}
                 />
@@ -125,9 +128,9 @@ export function WishlistSection() {
                 <Button
                   onClick={handleSubmit}
                   disabled={loading}
-                  className="w-full md:w-auto rounded-full px-6"
+                  className="w-full md:w-auto rounded-full px-6 cursor-pointer"
                 >
-                  {loading ? "Submitting..." : "Join wishlist"}
+                  {loading ? "Submitting..." : "Join waitlist"}
                 </Button>
               </div>
             </div>

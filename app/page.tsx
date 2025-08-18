@@ -25,7 +25,7 @@ export default function LandingPage() {
           <BentoSection />
         </AnimatedSection>
         <AnimatedSection
-          id="wishlist-section"
+          id="waitlist-section"
           className="relative z-10 max-w-[1320px] mx-auto mt-8 md:mt-16"
           delay={0.2}
         >

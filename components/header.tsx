@@ -8,11 +8,7 @@ import { Menu } from "lucide-react"
 import Link from "next/link" // Import Link for client-side navigation
 
 export function Header() {
-  const navItems = [
-    { name: "Features", href: "#features-section" },
-    
-    { name: "Wishlist", href: "#wishlist-section" }, // Changed from Docs to Testimonials
-  ]
+  const navItems: { name: string; href: string }[] = []
 
   const handleScroll = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
     e.preventDefault()
@@ -44,8 +40,8 @@ export function Header() {
           </nav>
         </div>
         <div className="flex items-center gap-4">
-          <a href="#wishlist-section"  className="hidden md:block">
-            <Button className="bg-secondary text-gray-900 hover:bg-secondary/90 px-6 py-2 rounded-full font-medium shadow-sm">
+          <a href="#waitlist-section"  className="hidden md:block">
+            <Button className="bg-secondary text-gray-900 hover:bg-secondary/90 px-6 py-2 rounded-full font-medium shadow-sm cursor-pointer">
               Join the revolution
             </Button>
           </a>

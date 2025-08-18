@@ -4,7 +4,7 @@ import { Button } from './button';
 const Header = () => {
   const navItems = [
     { name: "Features", href: "#features-section" },
-    { name: "Wishlist", href: "#wishlist-section" },
+    { name: "Waitlist", href: "#waitlist-section" },
   ];
 
   return (
@@ -42,7 +42,7 @@ const HeroSection = () => {
         <h1 className="text-5xl font-bold mb-4">SursaKit — AI‑powered Cloud Editor</h1>
         <p className="text-lg mb-8">Code, preview, and ship from your browser. SursaKit combines an AI pair‑programmer, live previews, and integrations in a collaborative cloud workspace.</p>
         <Button className="bg-primary text-primary-foreground hover:bg-primary/90 px-8 py-4 rounded-full font-medium shadow-lg">
-          <a href="#wishlist-section" className="text-inherit">Join the wishlist</a>
+          <a href="#waitlist-section" className="text-inherit">Join the waitlist</a>
         </Button>
       </div>
     </section>
@@ -62,7 +62,7 @@ const CtaSection = () => {
         <h2 className="text-4xl font-bold mb-4">Build, preview, and ship from your browser</h2>
         <p className="text-lg mb-8">SursaKit is a web‑based AI cloud editor. Write code with an AI pair‑programmer, test with real‑time previews, and integrate your favorite tools seamlessly.</p>
         <Button className="bg-secondary text-secondary-foreground hover:bg-secondary/90 px-8 py-4 rounded-full font-medium shadow-lg">
-          <a href="#wishlist-section" className="text-inherit">Join wishlist</a>
+          <a href="#waitlist-section" className="text-inherit">Join waitlist</a>
         </Button>
       </div>
     </section>

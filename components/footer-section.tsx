@@ -2,7 +2,7 @@ import { Phone } from "lucide-react";
 
 export default function FooterSection() {
   return (
-    <footer className=" text-gray-300 py-12 px-6 cursor-pointer">
+    <footer className=" text-gray-300 py-12 px-6">
       <div className="max-w-7xl mx-auto flex flex-col gap-8 lg:flex-row lg:items-center justify-evenly ">
         {/* SursaKit info */}
          <div>
@@ -51,7 +51,7 @@ export default function FooterSection() {
           </p>
           <a
             href="mailto:hello@sursakit.com"
-            className="flex items-center gap-2  hover:underline"
+            className="flex items-center gap-2  hover:underline cursor-pointer"
           >
             <svg xmlns="http://www.w3.org/2000/svg" className="inline-block h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 12l-4-4-4 4m8 0l-4 4-4-4" />

@@ -8,7 +8,7 @@ const faqData = [
   {
     question: "What is SursaKit and who is it for?",
     answer:
-      "SursaKit is an AI-powered cloud editor currently in development, designed to help developers and teams accelerate their coding workflow with intelligent assistance. It’s perfect for early adopters and developers interested in cutting-edge cloud-based editing and AI integration.",
+      "SursaKit is an AI-powered cloud editor, designed to help developers and teams accelerate their coding workflow with intelligent assistance. It’s perfect for early adopters and developers interested in cutting-edge cloud-based editing and AI integration.",
   },
   {
     question: "How does SursaKit's AI-powered editing work?",
@@ -18,17 +18,12 @@ const faqData = [
   {
     question: "Can I get access to SursaKit now?",
     answer:
-      "Currently, SursaKit is in its developmental phase. Users can join the wishlist to get early access and updates. Joining the wishlist is the best way to be among the first to experience the platform once it launches.",
+      "Users can join the waitlist to get early access and updates. Joining the waitlist is the best way to be among the one to experience the platform first.",
   },
   {
     question: "Will SursaKit integrate with existing development tools?",
     answer:
       "Yes, integration with popular tools and platforms is planned, allowing seamless workflows with Git repositories, CI/CD pipelines, and collaboration tools to enhance your development experience.",
-  },
-  {
-    question: "What features will be available in the initial release?",
-    answer:
-      "The initial release will include AI-assisted code editing, cloud-based project management, real-time collaboration, and easy deployment options. More features will be added based on user feedback from the wishlist community.",
   },
   {
     question: "Is my code secure on SursaKit?",
@@ -100,7 +95,7 @@ export function FAQSection() {
             Frequently Asked Questions
           </h2>
           <p className="self-stretch text-center text-muted-foreground text-sm font-medium leading-[18.20px] break-words">
-            Everything you need to know about Pointer and how it can transform your development workflow
+            Everything you need to know about SursaKit and how it can transform your development workflow
           </p>
         </div>
       </div>
