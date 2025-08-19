@@ -1,4 +1,4 @@
-import { Phone } from "lucide-react";
+import { Mail } from "lucide-react";
 
 export default function FooterSection() {
   return (
@@ -7,8 +7,7 @@ export default function FooterSection() {
         {/* SursaKit info */}
          <div>
           <div className="flex items-center mb-3">
-            
-            <span className="ml-2 font-semibold text-white text-lg">SursaKit</span>
+            <span className="font-semibold text-white text-lg">SursaKit</span>
           </div>
           <p className="text-sm leading-relaxed max-w-xs">
             AI-powered cloud editor for the modern developer. Transform your coding experience with intelligent assistance.
@@ -51,11 +50,9 @@ export default function FooterSection() {
           </p>
           <a
             href="mailto:hello@sursakit.com"
-            className="flex items-center gap-2  hover:underline cursor-pointer"
+            className="flex items-center gap-2 hover:underline cursor-pointer"
           >
-            <svg xmlns="http://www.w3.org/2000/svg" className="inline-block h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 12l-4-4-4 4m8 0l-4 4-4-4" />
-            </svg>
+            <Mail className="inline-block h-5 w-5" />
             hello@sursakit.com
           </a>
         </div>

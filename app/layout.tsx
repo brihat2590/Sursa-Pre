@@ -22,6 +22,7 @@ export const metadata: Metadata = {
   creator: "SursaTech",
   publisher: "SursaTech",
   robots: "index, follow",
+  metadataBase: new URL("https://sursakit.com"),
   openGraph: {
     type: "website",
     locale: "en_US",
@@ -74,7 +75,11 @@ export const metadata: Metadata = {
     ],
   },
   manifest: "/manifest.json",
-  viewport: "width=device-width, initial-scale=1",
+};
+
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
   themeColor: "#FFE230",
   colorScheme: "light dark",
 };
