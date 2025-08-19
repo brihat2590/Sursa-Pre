@@ -10,6 +10,14 @@ const AiCodeReviews: React.FC = () => {
     "--ai-border-main": "hsl(var(--foreground) / 0.1)",
     "--ai-highlight-primary": "hsl(var(--primary) / 0.12)",
     "--ai-highlight-header": "hsl(var(--accent) / 0.2)",
+    // VS Code-like code colors
+    "--ai-code-keyword": "#569CD6",
+    "--ai-code-type": "#DCDCAA",
+    "--ai-code-string": "#CE9178",
+    "--ai-code-comment": "#6A9955",
+    "--ai-code-muted": "hsl(var(--muted-foreground))",
+    // Ghost suggestion style (like VS Code IntelliSense ghost text)
+    "--ai-code-ghost": "hsl(var(--foreground) / 0.45)",
   }
 
   return (
@@ -120,30 +128,7 @@ const AiCodeReviews: React.FC = () => {
             overflow: "hidden",
           }}
         >
-          <div
-            style={{
-              position: "absolute",
-              left: 0,
-              right: 0,
-              width: "100%",
-              top: "47.67px",
-              height: "33.118px",
-              background: "hsl(var(--foreground) / 0.08)",
-              zIndex: 1,
-            }}
-          />
-          <div
-            style={{
-              position: "absolute",
-              left: 0,
-              right: 0,
-              width: "100%",
-              top: "80.791px",
-              height: "45.465px",
-              background: "var(--ai-highlight-primary)",
-              zIndex: 1,
-            }}
-          />
+          {/* background highlight bars removed */}
           <div
   style={{
     fontFamily:
@@ -160,31 +145,46 @@ const AiCodeReviews: React.FC = () => {
   }}
 >
   <p style={{ margin: 0, whiteSpace: "pre-wrap", fontWeight: 400 }}>
-    {"interface User {"}
+    <span style={{ color: "var(--ai-code-keyword)" }}>interface</span>{" "}
+    <span style={{ color: "var(--ai-code-type)" }}>User</span>{" {"}
   </p>
   <p style={{ margin: 0, whiteSpace: "pre-wrap", fontWeight: 400 }}>
-    {"  id: number;"}
+    {"  id: "}
+    <span style={{ color: "var(--ai-code-type)" }}>number</span>{";"}
   </p>
   <p style={{ margin: 0, whiteSpace: "pre-wrap", fontWeight: 400 }}>
-    {"  name: string;"}
+    {"  name: "}
+    <span style={{ color: "var(--ai-code-type)" }}>string</span>{";"}
   </p>
   <p style={{ margin: 0, whiteSpace: "pre-wrap", fontWeight: 400 }}>
-    {"  status: 'active' | 'inactive' | 'pending';"}
+    {"  status: "}
+    <span style={{ color: "var(--ai-code-string)" }}>'active'</span>{" | "}
+    <span style={{ color: "var(--ai-code-string)" }}>'inactive'</span>{" | "}
+    <span style={{ color: "var(--ai-code-string)" }}>'pending'</span>{";"}
   </p>
-  <p style={{ margin: 0, whiteSpace: "pre-wrap", fontWeight: 400 }}>
-    {"}"}
-  </p>
+  <p style={{ margin: 0, whiteSpace: "pre-wrap", fontWeight: 400 }}>{"}"}</p>
   <p style={{ margin: 0, whiteSpace: "pre-wrap", fontWeight: 400 }}> </p>
   <p style={{ margin: 0, whiteSpace: "pre-wrap", fontWeight: 400 }}>
-    {"function filterAndSortUsers(users: User[], status: User['status']): User[] {"}
+    <span style={{ color: "var(--ai-code-keyword)" }}>function</span>{" "}
+    <span style={{ color: "var(--ai-text-color)" }}>filterAndSortUsers</span>
+    <span>{"("}</span>
+    <span>users: </span>
+    <span style={{ color: "var(--ai-code-type)" }}>User</span>
+    <span>{"[], status: "}</span>
+    <span style={{ color: "var(--ai-code-type)" }}>User</span>
+    <span>{"["}</span>
+    <span style={{ color: "var(--ai-code-string)" }}>'status'</span>
+    <span>{"]) : "}</span>
+    <span style={{ color: "var(--ai-code-type)" }}>User</span>
+    <span>{"[] {"}</span>
   </p>
-  <p style={{ margin: 0, whiteSpace: "pre-wrap", fontWeight: 400 }}>
+  <p style={{ margin: 0, whiteSpace: "pre-wrap", fontWeight: 400, color: "var(--ai-code-ghost)", fontStyle: "italic" }}>
     {"  return users"}
   </p>
-  <p style={{ margin: 0, whiteSpace: "pre-wrap", fontWeight: 400 }}>
+  <p style={{ margin: 0, whiteSpace: "pre-wrap", fontWeight: 400, color: "var(--ai-code-ghost)", fontStyle: "italic" }}>
     {"    .filter(user => user.status === status)"}
   </p>
-  <p style={{ margin: 0, whiteSpace: "pre-wrap", fontWeight: 400 }}>
+  <p style={{ margin: 0, whiteSpace: "pre-wrap", fontWeight: 400, color: "var(--ai-code-ghost)", fontStyle: "italic" }}>
     {"    .sort((a, b) => a.name.localeCompare(b.name));"}
   </p>
   <p style={{ margin: 0, whiteSpace: "pre-wrap", fontWeight: 400 }}>
@@ -192,26 +192,42 @@ const AiCodeReviews: React.FC = () => {
   </p>
   <p style={{ margin: 0, whiteSpace: "pre-wrap", fontWeight: 400 }}> </p>
   <p style={{ margin: 0, whiteSpace: "pre-wrap", fontWeight: 400 }}>
-    {"// Example usage:"}
+    <span style={{ color: "var(--ai-code-comment)" }}>// Example usage:</span>
   </p>
   <p style={{ margin: 0, whiteSpace: "pre-wrap", fontWeight: 400 }}>
-    {"const users: User[] = ["}
+    <span style={{ color: "var(--ai-code-keyword)" }}>const</span>{" users: "}
+    <span style={{ color: "var(--ai-code-type)" }}>User</span>
+    {"[] = ["}
   </p>
   <p style={{ margin: 0, whiteSpace: "pre-wrap", fontWeight: 400 }}>
-    {"  { id: 1, name: 'Alice', status: 'active' },"}
+    {"  { id: 1, name: "}
+    <span style={{ color: "var(--ai-code-string)" }}>'Alice'</span>
+    {", status: "}
+    <span style={{ color: "var(--ai-code-string)" }}>'active'</span>
+    {" },"}
   </p>
   <p style={{ margin: 0, whiteSpace: "pre-wrap", fontWeight: 400 }}>
-    {"  { id: 2, name: 'Bob', status: 'pending' },"}
+    {"  { id: 2, name: "}
+    <span style={{ color: "var(--ai-code-string)" }}>'Bob'</span>
+    {", status: "}
+    <span style={{ color: "var(--ai-code-string)" }}>'pending'</span>
+    {" },"}
   </p>
   <p style={{ margin: 0, whiteSpace: "pre-wrap", fontWeight: 400 }}>
-    {"  { id: 3, name: 'Charlie', status: 'active' },"}
+    {"  { id: 3, name: "}
+    <span style={{ color: "var(--ai-code-string)" }}>'Charlie'</span>
+    {", status: "}
+    <span style={{ color: "var(--ai-code-string)" }}>'active'</span>
+    {" },"}
   </p>
   <p style={{ margin: 0, whiteSpace: "pre-wrap", fontWeight: 400 }}>
     {"];"}
   </p>
   <p style={{ margin: 0, whiteSpace: "pre-wrap", fontWeight: 400 }}> </p>
   <p style={{ margin: 0, whiteSpace: "pre-wrap", fontWeight: 400 }}>
-    {"const activeUsers = filterAndSortUsers(users, 'active');"}
+    <span style={{ color: "var(--ai-code-keyword)" }}>const</span>{" activeUsers = filterAndSortUsers(users, "}
+    <span style={{ color: "var(--ai-code-string)" }}>'active'</span>
+    {" );"}
   </p>
 </div>
 
@@ -266,3 +282,4 @@ const AiCodeReviews: React.FC = () => {
 }
 
 export default AiCodeReviews
+
