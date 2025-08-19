@@ -42,7 +42,6 @@ export function Header() {
         </div>
         
         <div className="flex items-center gap-4">
-          {/* "Join the revolution" button - hidden on mobile, visible on md+ */}
           <a href="#waitlist-section" >
             <Button className="bg-secondary text-gray-900 hover:bg-secondary/90 px-6 py-2 rounded-full font-medium shadow-sm cursor-pointer">
               Join the revolution
