@@ -147,7 +147,7 @@ export default function SecureEnvironments({ className = "" }: SecureEnvironment
         {/* Status pills around the badge */}
         <Pill
           icon={<ShieldCheck size={12} />}
-          label="Encrypted at rest"
+          label="Encrypted"
           style={{
             top: -6,
             left: "50%",
