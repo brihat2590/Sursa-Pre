@@ -32,11 +32,8 @@ export const metadata: Metadata = {
     description: "AI-powered, cloud-based IDE that lets you code, collaborate, and build from anywhere",
     images: [
       {
-        url: "/logo-512.svg",
-        width: 512,
-        height: 512,
-        alt: "SursaKit Logo",
-        type: "image/svg+xml",
+        url: "https://sursakit.com/og.png",
+      
       },
     ],
   },
@@ -44,7 +41,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "SursaKit – The Future of Dev Infrastructure",
     description: "AI-powered, cloud-based IDE that lets you code, collaborate, and build from anywhere",
-    images: ["/logo-512.svg"],
+    images: ["https://sursakit.com/og.png"],
   },
   icons: {
     icon: [

@@ -128,7 +128,6 @@ const AiCodeReviews: React.FC = () => {
             overflow: "hidden",
           }}
         >
-          {/* background highlight bars removed */}
           <div
   style={{
     fontFamily:
