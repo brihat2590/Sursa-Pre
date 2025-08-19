@@ -20,18 +20,19 @@ export function Header() {
   }
 
   return (
-    <header className="w-full py-4 px-6 ">
-      <div className="max-w-7xl mx-auto flex items-center justify-between ">
+    <header className="w-full py-4 px-6">
+      <div className="max-w-7xl mx-auto flex items-center justify-between">
         <div className="flex items-center gap-6">
           <div className="flex items-center gap-3">
             <span className="text-foreground text-xl font-semibold">SursaKit</span>
           </div>
+          {/* Navigation items - hidden on mobile, visible on md+ */}
           <nav className="hidden md:flex items-center gap-2">
             {navItems.map((item) => (
               <Link
                 key={item.name}
                 href={item.href}
-                onClick={(e) => handleScroll(e, item.href)} // Add onClick handler
+                onClick={(e) => handleScroll(e, item.href)}
                 className="text-[#888888] hover:text-foreground px-4 py-2 rounded-full font-medium transition-colors"
               >
                 {item.name}
@@ -39,42 +40,14 @@ export function Header() {
             ))}
           </nav>
         </div>
+        
         <div className="flex items-center gap-4">
-          <a href="#waitlist-section"  className="hidden md:block">
+          {/* "Join the revolution" button - hidden on mobile, visible on md+ */}
+          <a href="#waitlist-section" >
             <Button className="bg-secondary text-gray-900 hover:bg-secondary/90 px-6 py-2 rounded-full font-medium shadow-sm cursor-pointer">
               Join the revolution
             </Button>
           </a>
-          <Sheet>
-            <SheetTrigger asChild className="md:hidden">
-              <Button variant="ghost" size="icon" className="text-foreground">
-                <Menu className="h-7 w-7" />
-                <span className="sr-only">Toggle navigation menu</span>
-              </Button>
-            </SheetTrigger>
-            <SheetContent side="bottom" className="bg-background border-t border-border text-foreground">
-              <SheetHeader>
-                <SheetTitle className="text-left text-xl font-semibold text-foreground">Navigation</SheetTitle>
-              </SheetHeader>
-              <nav className="flex flex-col gap-4 mt-6">
-                {navItems.map((item) => (
-                  <Link
-                    key={item.name}
-                    href={item.href}
-                    onClick={(e) => handleScroll(e, item.href)} // Add onClick handler
-                    className="text-[#888888] hover:text-foreground justify-start text-lg py-2"
-                  >
-                    {item.name}
-                  </Link>
-                ))}
-                <Link href="https://vercel.com/home" target="_blank" rel="noopener noreferrer" className="w-full mt-4">
-                  <Button className="bg-secondary text-secondary-foreground hover:bg-secondary/90 px-6 py-2 rounded-full font-medium shadow-sm">
-                    Try for Free
-                  </Button>
-                </Link>
-              </nav>
-            </SheetContent>
-          </Sheet>
         </div>
       </div>
     </header>
