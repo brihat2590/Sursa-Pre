@@ -3,7 +3,7 @@ import Link from "next/link"
 
 export function CTASection() {
   return (
-    <section className="w-full pt-20 md:pt-60 lg:pt-60 pb-10 md:pb-20 px-5 relative flex flex-col justify-center items-center overflow-visible">
+    <section className="w-full pt-16 sm:pt-24 md:pt-60 lg:pt-60 pb-8 sm:pb-16 md:pb-20 px-4 sm:px-8 md:px-5 relative flex flex-col justify-center items-center overflow-visible">
       <div className="absolute inset-0 top-[-90px]">
         <svg
           className="w-full h-full"
@@ -101,18 +101,18 @@ export function CTASection() {
           </defs>
         </svg>
       </div>
-      <div className="relative z-10 flex flex-col justify-start items-center gap-9 max-w-4xl mx-auto">
-        <div className="flex flex-col justify-start items-center gap-4 text-center">
-          <h2 className="text-foreground text-4xl md:text-5xl lg:text-[68px] font-semibold leading-tight md:leading-tight lg:leading-[76px] break-words max-w-[435px]">
+      <div className="relative z-10 flex flex-col justify-start items-center gap-6 sm:gap-8 md:gap-9 max-w-4xl mx-auto px-4 sm:px-0 md:px-0">
+        <div className="flex flex-col justify-start items-center gap-3 sm:gap-5 md:gap-4 text-center">
+          <h2 className="text-foreground text-3xl sm:text-5xl md:text-5xl lg:text-[68px] font-semibold leading-tight md:leading-tight lg:leading-[76px] break-words max-w-[350px] sm:max-w-[500px] md:max-w-[435px] px-2 sm:px-0 md:px-0">
             Coding made effortless
           </h2>
-          <p className="text-muted-foreground text-sm md:text-base font-medium leading-[18.20px] md:leading-relaxed break-words max-w-2xl">
+          <p className="text-muted-foreground text-sm md:text-base font-medium leading-[18.20px] md:leading-relaxed break-words max-w-sm sm:max-w-2xl md:max-w-2xl px-4 sm:px-0 md:px-0">
             Lean  how developers can ship products faster, collaborate seamlessly, and build with confidence using SursaKit!
           </p>
         </div>
         <a href="#waitlist-section" >
           <Button
-            className="px-[30px] py-2 bg-primary text-secondary-foreground text-base font-medium leading-6 rounded-[99px] shadow-[0px_0px_0px_4px_rgba(255,255,255,0.13)] hover:bg-secondary/90 transition-all duration-200 cursor-pointer"
+            className="px-6 sm:px-10 md:px-[30px] py-2 bg-primary text-secondary-foreground text-sm sm:text-lg md:text-base font-medium leading-6 rounded-[99px] shadow-[0px_0px_0px_4px_rgba(255,255,255,0.13)] hover:bg-secondary/90 transition-all duration-200 cursor-pointer"
             size="lg"
           >
             Get Started

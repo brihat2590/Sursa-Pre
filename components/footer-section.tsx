@@ -2,14 +2,14 @@ import { Mail } from "lucide-react";
 
 export default function FooterSection() {
   return (
-    <footer className=" text-gray-300 py-12 px-6">
-      <div className="max-w-7xl mx-auto flex flex-col gap-8 lg:flex-row lg:items-center justify-evenly ">
+    <footer className="text-gray-300 py-8 sm:py-16 md:py-12 px-4 sm:px-8 md:px-6">
+      <div className="max-w-7xl mx-auto flex flex-col gap-6 sm:gap-10 md:gap-8 lg:flex-row lg:items-center justify-evenly">
         {/* SursaKit info */}
-         <div>
-          <div className="flex items-center mb-3">
-            <span className="font-semibold text-white text-lg">SursaKit</span>
+         <div className="text-center lg:text-left">
+          <div className="flex items-center justify-center lg:justify-start mb-3">
+            <span className="font-semibold text-white text-lg sm:text-xl md:text-lg">SursaKit</span>
           </div>
-          <p className="text-sm leading-relaxed max-w-xs">
+          <p className="text-sm sm:text-base md:text-sm leading-relaxed max-w-xs sm:max-w-sm md:max-w-xs mx-auto lg:mx-0">
             AI-powered cloud editor for the modern developer. Transform your coding experience with intelligent assistance.
           </p>
         </div> 
@@ -43,14 +43,14 @@ export default function FooterSection() {
         </div>  */}
 
         {/* Stay Updated */}
-        <div>
-          <h4 className="text-white font-semibold mb-3">STAY UPDATED</h4>
-          <p className="text-sm leading-relaxed max-w-xs mb-2">
+        <div className="text-center lg:text-left">
+          <h4 className="text-white font-semibold mb-3 text-base sm:text-lg md:text-base">STAY UPDATED</h4>
+          <p className="text-sm sm:text-base md:text-sm leading-relaxed max-w-xs sm:max-w-sm md:max-w-xs mb-2 mx-auto lg:mx-0">
             If you have any queries, you can mail us at the following mail id.
           </p>
           <a
             href="mailto:hello@sursakit.com"
-            className="flex items-center gap-2 hover:underline cursor-pointer"
+            className="flex items-center gap-2 hover:underline cursor-pointer justify-center lg:justify-start text-sm sm:text-base md:text-sm"
           >
             <Mail className="inline-block h-5 w-5" />
             hello@sursakit.com
@@ -58,9 +58,9 @@ export default function FooterSection() {
         </div>
       </div>
 
-      <hr className="border-gray-700 my-8" />
+      <hr className="border-gray-700 my-6 sm:my-10 md:my-8" />
 
-      <div className="text-center text-gray-500 text-sm">
+      <div className="text-center text-gray-500 text-sm sm:text-base md:text-sm px-4">
         © 2025 Sursakit. All rights reserved.<br />
       
       </div>

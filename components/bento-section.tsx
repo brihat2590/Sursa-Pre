@@ -29,15 +29,15 @@ const BentoCard:React.FC<bentoType> = ({ title, description, Component }) => (
     {/* Additional subtle gradient overlay */}
     <div className="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent rounded-2xl" />
 
-    <div className="self-stretch p-6 flex flex-col justify-start items-start gap-2 relative z-10">
+    <div className="self-stretch p-4 sm:p-6 flex flex-col justify-start items-start gap-2 relative z-10">
       <div className="self-stretch flex flex-col justify-start items-start gap-1.5">
-        <p className="self-stretch text-foreground text-xl font-normal leading-7 p-2">
+        <p className="self-stretch text-foreground text-lg sm:text-xl font-normal leading-6 sm:leading-7 p-2">
           {title} <br />
-          <span className="text-muted-foreground text-lg">{description}</span>
+          <span className="text-muted-foreground text-base sm:text-lg">{description}</span>
         </p>
       </div>
     </div>
-    <div className="self-stretch h-72 relative -mt-0.5 z-10">
+    <div className="self-stretch h-56 sm:h-72 relative -mt-0.5 z-10">
       <Component />
     </div>
   </div>
@@ -78,20 +78,20 @@ export function BentoSection() {
   ]
 
   return (
-    <section className="w-full pt-50  px-5 flex flex-col justify-center items-center overflow-visible bg-transparent ">
-      <div className="w-full py-8 md:py-16 relative flex flex-col justify-start items-start gap-6">
-        <div className="w-[547px] h-[938px] absolute top-[614px] left-[80px] origin-top-left rotate-[-33.39deg] bg-primary/10 blur-[130px] z-0" />
-        <div className="self-stretch py-8 md:py-14 flex flex-col justify-center items-center gap-2 z-10">
-          <div className="flex flex-col justify-start items-center gap-4">
-            <h2 className="w-full max-w-[655px] text-center text-foreground text-4xl md:text-6xl font-semibold leading-tight md:leading-[66px] mt-10">
+    <section className="w-full pt-2 sm:pt-8 md:pt-50 px-4 sm:px-8 md:px-5 flex flex-col justify-center items-center overflow-visible bg-transparent ">
+      <div className="w-full py-4 sm:py-8 md:py-16 relative flex flex-col justify-start items-start gap-4 sm:gap-6 md:gap-6">
+        <div className="w-[300px] sm:w-[500px] md:w-[547px] h-[500px] sm:h-[800px] md:h-[938px] absolute top-[300px] sm:top-[200px] md:top-[614px] left-[40px] sm:left-[80px] md:left-[80px] origin-top-left rotate-[-33.39deg] bg-primary/10 blur-[80px] sm:blur-[120px] md:blur-[130px] z-0" />
+        <div className="self-stretch py-4 sm:py-8 md:py-14 flex flex-col justify-center items-center gap-2 z-10">
+          <div className="flex flex-col justify-start items-center gap-3 sm:gap-4 md:gap-4">
+            <h2 className="w-full max-w-[500px] sm:max-w-[700px] md:max-w-[655px] text-center text-foreground text-3xl sm:text-5xl md:text-6xl font-semibold leading-tight md:leading-[66px] mt-2 sm:mt-4 md:mt-10 px-4 sm:px-0 md:px-0">
               Empower Your Workflow with AI
             </h2>
-            <p className="w-full max-w-[600px] text-center text-muted-foreground text-lg md:text-xl font-medium leading-relaxed">
+            <p className="w-full max-w-[500px] sm:max-w-[650px] md:max-w-[600px] text-center text-muted-foreground text-base sm:text-xl md:text-xl font-medium leading-relaxed px-4 sm:px-0 md:px-0">
             SursaKit is an AI-powered cloud-based code editor that enables real-time collaboration, offers seamless integrations, and delivers actionable insights to streamline your development workflow.
             </p>
           </div>
         </div>
-        <div className="self-stretch grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 z-10">
+        <div className="self-stretch grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-6 z-10">
           {cards.map((card) => (
             <BentoCard key={card.title} {...card} />
           ))}

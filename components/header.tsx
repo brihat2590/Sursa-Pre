@@ -20,11 +20,11 @@ export function Header() {
   }
 
   return (
-    <header className="w-full py-4 px-6">
+    <header className="w-full py-3 sm:py-5 md:py-4 px-4 sm:px-8 md:px-6">
       <div className="max-w-7xl mx-auto flex items-center justify-between">
-        <div className="flex items-center gap-6">
-          <div className="flex items-center gap-3">
-            <span className="text-foreground text-xl font-semibold">SursaKit</span>
+        <div className="flex items-center gap-4 sm:gap-8 md:gap-6">
+          <div className="flex items-center gap-2 sm:gap-4 md:gap-3">
+            <span className="text-foreground text-lg sm:text-2xl md:text-xl font-semibold">SursaKit</span>
           </div>
           {/* Navigation items - hidden on mobile, visible on md+ */}
           <nav className="hidden md:flex items-center gap-2">
@@ -41,9 +41,9 @@ export function Header() {
           </nav>
         </div>
         
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-3 sm:gap-5 md:gap-4">
           <a href="#waitlist-section" >
-            <Button className="bg-secondary text-gray-900 hover:bg-secondary/90 px-6 py-2 rounded-full font-medium shadow-sm cursor-pointer">
+            <Button className="bg-secondary text-gray-900 hover:bg-secondary/90 px-4 sm:px-8 md:px-6 py-1.5 sm:py-2.5 md:py-2 rounded-full font-medium text-sm sm:text-lg md:text-base shadow-sm cursor-pointer">
               Join the revolution
             </Button>
           </a>

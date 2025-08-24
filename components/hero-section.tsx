@@ -6,8 +6,8 @@ import { Header } from "./header"
 export function HeroSection() {
   return (
     <section
-      className="flex flex-col items-center text-center relative mx-auto rounded-2xl overflow-hidden my-6 py-0 px-4
-         w-full h-[400px] md:w-[1220px] md:h-[600px] lg:h-[810px] md:px-0 pt-8"
+      className="flex flex-col items-center text-center relative mx-auto rounded-2xl overflow-hidden my-4 sm:my-6 py-0 px-4 sm:px-6
+         w-full h-[350px] sm:h-[600px] md:h-[600px] lg:h-[810px] md:px-0 pt-6 sm:pt-10 md:pt-8"
     >
       {/* SVG Background */}
       <div className="absolute inset-0 z-0">
@@ -18,6 +18,7 @@ export function HeroSection() {
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
           preserveAspectRatio="xMidYMid slice"
+          className="opacity-60 sm:opacity-90 md:opacity-100"
         >
           <g clipPath="url(#clip0_186_1134)">
             <mask
@@ -437,17 +438,18 @@ export function HeroSection() {
         <Header />
       </div>
 
-      <div className="relative z-10 space-y-4 md:space-y-5 lg:space-y-6 mb-6 md:mb-7 lg:mb-9 max-w-md md:max-w-[500px] lg:max-w-[588px] mt-16 md:mt-[120px] lg:mt-[160px] px-4">
-        <h1 className="text-foreground text-3xl md:text-4xl lg:text-6xl font-semibold leading-tight">
+      {/* Content container with higher z-index and better positioning */}
+      <div className="relative z-30 space-y-6 sm:space-y-5 md:space-y-5 lg:space-y-6 mb-6 sm:mb-8 md:mb-7 lg:mb-9 max-w-sm sm:max-w-lg md:max-w-[500px] lg:max-w-[588px] mt-20 sm:mt-24 md:mt-[120px] lg:mt-[160px] px-2 sm:px-6 md:px-4">
+        <h1 className="text-foreground text-2xl sm:text-4xl md:text-4xl lg:text-6xl font-semibold leading-tight px-2 sm:px-0 md:px-0 drop-shadow-lg">
           Next Generation Cloud Development
         </h1>
-        <p className="text-muted-foreground text-base md:text-base lg:text-lg font-medium leading-relaxed max-w-lg mx-auto">
+        <p className="text-muted-foreground text-sm sm:text-lg md:text-base lg:text-lg font-medium leading-relaxed max-w-sm sm:max-w-xl md:max-w-lg mx-auto px-2 sm:px-0 md:px-0 drop-shadow-lg">
         Accelerate your development workflow with an intelligent AI-powered cloud code editor that helps you write, review, and optimize your code seamlessly.
         </p>
       </div>
 
-      <a href="#waitlist-section" >
-        <Button className="relative z-10 bg-secondary text-secondary-foreground hover:bg-secondary/90 px-8 py-3 rounded-full font-medium text-base shadow-lg ring-1 ring-white/10 cursor-pointer">
+      <a href="#waitlist-section" className="relative z-30">
+        <Button className="relative z-30 bg-secondary text-secondary-foreground hover:bg-secondary/90 px-6 sm:px-10 md:px-8 py-2.5 sm:py-3 md:py-3 rounded-full font-medium text-sm sm:text-lg md:text-base shadow-lg ring-1 ring-white/10 cursor-pointer drop-shadow-lg">
           Get Started
         </Button>
       </a>
