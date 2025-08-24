@@ -78,7 +78,7 @@ export function BentoSection() {
   ]
 
   return (
-    <section className="w-full pt-2 sm:pt-8 md:pt-50 px-4 sm:px-8 md:px-5 flex flex-col justify-center items-center overflow-visible bg-transparent ">
+    <section className="w-full pt-2 sm:pt-8 md:pt-16 px-4 sm:px-8 md:px-5 flex flex-col justify-center items-center overflow-visible bg-transparent ">
       <div className="w-full py-4 sm:py-8 md:py-16 relative flex flex-col justify-start items-start gap-4 sm:gap-6 md:gap-6">
         <div className="w-[300px] sm:w-[500px] md:w-[547px] h-[500px] sm:h-[800px] md:h-[938px] absolute top-[300px] sm:top-[200px] md:top-[614px] left-[40px] sm:left-[80px] md:left-[80px] origin-top-left rotate-[-33.39deg] bg-primary/10 blur-[80px] sm:blur-[120px] md:blur-[130px] z-0" />
         <div className="self-stretch py-4 sm:py-8 md:py-14 flex flex-col justify-center items-center gap-2 z-10">
