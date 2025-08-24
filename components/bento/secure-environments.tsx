@@ -131,7 +131,7 @@ export default function SecureEnvironments({ className = "" }: SecureEnvironment
               letterSpacing: "-0.2px",
             }}
           >
-            100% secure environments
+            Enterprise Grade Security
           </div>
           <div
             style={{
@@ -140,7 +140,7 @@ export default function SecureEnvironments({ className = "" }: SecureEnvironment
               color: "hsl(var(--muted-foreground))",
             }}
           >
-            Isolated • Encrypted • No egress
+            Isolated • Encrypted • Data Security
           </div>
         </div>
 
@@ -163,7 +163,7 @@ export default function SecureEnvironments({ className = "" }: SecureEnvironment
             transform: "translateY(-50%)",
           }}
         />
-        <Pill
+        {/* <Pill
           icon={<EyeOff size={12} />}
           label="Zero egress"
           style={{
@@ -171,7 +171,7 @@ export default function SecureEnvironments({ className = "" }: SecureEnvironment
             left: "50%",
             transform: "translateX(-50%)",
           }}
-        />
+        /> */}
       </div>
 
       {/* Animations */}
